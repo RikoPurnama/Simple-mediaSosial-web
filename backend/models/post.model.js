@@ -1,0 +1,55 @@
+import mongoose from "mongoose";
+
+const postSchema = new mongoose.Schema(
+  {
+    user: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
+    },
+    // classroom: {
+    //   type: mongoose.Schema.Types.ObjectId,
+    //   ref: "Room",
+    //   required: true,
+    // },
+    text: {
+      type: String,
+    },
+    mediaUrl: {
+      type: String,
+    },
+    mediaType: {
+      type: String,
+    },
+    likes: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
+    saved: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
+    comments: [
+      {
+        user: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "User",
+          required: true,
+        },
+        text: {
+          type: String,
+          required: true,
+        },
+      },
+    ],
+  },
+  { timestamps: true }
+);
+
+const Post = mongoose.model("Post", postSchema);
+
+export default Post;

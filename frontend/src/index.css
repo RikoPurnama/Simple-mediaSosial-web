@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Neue;
+        src: url('/NeueMontreal-Regular.otf');
+    }
+    html {
+        font-family: Neue;
+    }
+}
