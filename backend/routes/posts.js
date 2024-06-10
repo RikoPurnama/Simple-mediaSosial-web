@@ -14,7 +14,7 @@ import {
   getPost,
   getRoomPosts,
   createRoomPost,
-} from "../controllers/post.controller.js";
+} from "../api/controllers/post.controller.js";
 
 const router = express.Router();
 

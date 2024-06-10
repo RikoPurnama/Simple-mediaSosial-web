@@ -1,6 +1,6 @@
 import express from 'express';
 import { protectRoute } from '../middleware/protectRoute.js';
-import { createStory, getStories } from '../controllers/story.controller.js';
+import { createStory, getStories } from '../api/controllers/story.controller.js';
 
 const router = express.Router();
 

@@ -1,5 +1,5 @@
-import User from "../models/user.model.js";
-import Room from "../models/room.model.js";
+import User from "../../models/user.model.js";
+import Room from "../../models/room.model.js";
 
 export const createRooms = async (req, res) => {
   const { name, description } = req.body;

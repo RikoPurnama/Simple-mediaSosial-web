@@ -1,6 +1,6 @@
 import express from 'express';
 import { protectRoute } from '../middleware/protectRoute.js';
-import { createRooms, joinRooms } from '../controllers/room.controller.js';
+import { createRooms, joinRooms } from '../api/controllers/room.controller.js';
 
 const router = express.Router();
 
