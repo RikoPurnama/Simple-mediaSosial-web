@@ -12,6 +12,7 @@
   "dependencies": {
     "@tanstack/react-query": "^5.35.1",
     "emoji-picker-react": "^4.9.2",
+    "project-medsos": "file:..",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
